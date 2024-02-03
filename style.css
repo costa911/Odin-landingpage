@@ -1,0 +1,83 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* This ensures the aspect ratio is maintained */
+}
+
+.myavatar {
+    width: 100px;
+    /* Adjust the width as needed */
+    height: 100px;
+    /* Adjust the height as needed to maintain aspect ratio */
+    border-radius: 50%;
+    /* This creates a round shape */
+    border: 2px solid #ccc;
+    /* Add a border around the image */
+    object-fit: cover;
+    /* This ensures the image fills the space while maintaining aspect ratio */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.top-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #e6e6e6;
+}
+
+.card-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f2f2f2;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.quote-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #e6e6e6;
+}
+
+.bottom-signup {
+    text-align: center;
+    padding: 50px;
+    background-color: #f2f2f2;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e6e6e6;
+}
