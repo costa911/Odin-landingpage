@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div></div>
     <header>
         <img src="./images/Your Ingredients, Your Recipe Adventure!.png" class="logo">
         <nav>
@@ -22,32 +23,46 @@
 
     <section class="top-section">
         <h1>This Website is Awesome</h1>
-        <p>This is website is one of the Odin Project assignements, it's awesome because it has thought me how to create
-            a landing page!</p>
-        <button>Sign Up</button>
+        <p>This website is one of the Odin Project assignments. It's awesome because it has taught me how to create
+            a
+            landing page!</p>
         <img src="https://avatars.githubusercontent.com/u/102555905?v=4t" alt="Picture of myself" class="myavatar">
     </section>
 
     <section class="card-section">
         <div class="card">Interactive Cooking Assistant</div>
-        <div class="card">Recipe finder; Simply enter what you have in your kitchen and recipes will come up!</div>
         <div class="card">Smart Pantry Management</div>
+        <div class="card">Recipe finder; Simply enter what you have in your kitchen and recipes will come up!</div>
     </section>
 
     <section class="quote-section">
-        <blockquote>MyRecipeApp; Your Ingredients, Your recipe Adventure! </blockquote>
+        <blockquote>MyRecipeApp; Your Ingredients, Your Recipe Adventure! </blockquote>
     </section>
 
     <section class="bottom-signup">
-        <button>Sign Up</button>
+        <button id="signupButton">Sign Up</button>
     </section>
 
-    <style>
-        html {
-            cursor: url('./images/tomato.png'), auto;
-        }
-    </style>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>Thank you for signing up! This application is currently a work in progress. Have a great day!</p>
+        </div>
+    </div>
 
+    <script>
+        const signupButton = document.getElementById('signupButton');
+        const popup = document.getElementById('popup');
+        const closePopup = popup.querySelector('.close');
+
+        signupButton.addEventListener('click', function () {
+            popup.style.display = 'block';
+        });
+
+        closePopup.addEventListener('click', function () {
+            popup.style.display = 'none';
+        });
+    </script>
     <footer>
         <p>&copy; Costa911</p>
     </footer>

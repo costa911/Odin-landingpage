@@ -27,15 +27,18 @@
 
 body {
     font-family: Arial, sans-serif;
+    cursor: url(./images/tomato.png), pointer;
+    background-image: url(./images/pexels-ella-olsson-1640773.jpg);
+    background-size: cover;
 }
+
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #ff5722;
-    /* Orange color reminiscent of fresh fruits and vegetables */
 }
 
 nav ul {
@@ -50,49 +53,82 @@ nav ul li {
 .top-section {
     text-align: center;
     padding: 50px;
-    background-color: #ffee58;
-    /* Yellow color representing warmth and happiness associated with food */
 }
 
 .card-section {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     padding: 50px;
-    background-color: green;
 }
 
 .card {
     padding: 20px;
     border: 1px solid #ccc;
+    color: black;
+    font-size: large;
 }
 
 .quote-section {
     text-align: center;
     padding: 50px;
-    background-color: #ffeb3b;
-    /* Bright yellow color symbolizing energy and creativity */
+    font-weight: bold;
+    color: green;
+    font-size: 50px;
 }
 
 .bottom-signup {
+    border: none;
+    color: white;
+    padding: 10px 20px;
     text-align: center;
-    padding: 50px;
-    background-color: lightgreen;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.bottom-signup:hover {
+    background-color: #45a049;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.popup-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 footer {
-    text-align: center;
+    text-align: right;
     padding: 20px;
-    background-color: #ff9800;
-    /* Orange color reminiscent of fresh fruits and vegetables */
-}
-
-/* Add this CSS to your existing stylesheet */
-.tomato-cursor {
-    cursor: pointer;
-    /* Fallback cursor if custom cursor is not supported */
-}
-
-.tomato-cursor:hover {
-    cursor: url('./images/tomato.png'), auto;
-    /* Custom cursor on hover */
 }
