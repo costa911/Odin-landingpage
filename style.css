@@ -19,8 +19,8 @@
     /* Adjust the height as needed to maintain aspect ratio */
     border-radius: 50%;
     /* This creates a round shape */
-    border: 2px solid #ccc;
-    /* Add a border around the image */
+    border: 2px solid #ffc107;
+    /* Add a border around the image with a food-inspired color */
     object-fit: cover;
     /* This ensures the image fills the space while maintaining aspect ratio */
 }
@@ -34,7 +34,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #ff5722;
+    /* Orange color reminiscent of fresh fruits and vegetables */
 }
 
 nav ul {
@@ -49,14 +50,15 @@ nav ul li {
 .top-section {
     text-align: center;
     padding: 50px;
-    background-color: #e6e6e6;
+    background-color: #ffee58;
+    /* Yellow color representing warmth and happiness associated with food */
 }
 
 .card-section {
     display: flex;
     justify-content: space-around;
     padding: 50px;
-    background-color: #f2f2f2;
+    background-color: green;
 }
 
 .card {
@@ -67,17 +69,30 @@ nav ul li {
 .quote-section {
     text-align: center;
     padding: 50px;
-    background-color: #e6e6e6;
+    background-color: #ffeb3b;
+    /* Bright yellow color symbolizing energy and creativity */
 }
 
 .bottom-signup {
     text-align: center;
     padding: 50px;
-    background-color: #f2f2f2;
+    background-color: lightgreen;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #e6e6e6;
+    background-color: #ff9800;
+    /* Orange color reminiscent of fresh fruits and vegetables */
+}
+
+/* Add this CSS to your existing stylesheet */
+.tomato-cursor {
+    cursor: pointer;
+    /* Fallback cursor if custom cursor is not supported */
+}
+
+.tomato-cursor:hover {
+    cursor: url('./images/tomato.png'), auto;
+    /* Custom cursor on hover */
 }
